@@ -217,6 +217,7 @@ input[type=submit]{
 	textarea {
 		width: 80%;
 		border-left: none;
+		border-top-left-radius: none;
 	}
 	.icon-pass2 {
 		margin-top: -0.5px;
