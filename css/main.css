@@ -59,6 +59,8 @@ input[type=password],
 input[type=email],
 textarea {
 	border: 1px solid #248f24;
+	margin-left: -2px;
+	border-top-left-radius: none;
 	width: 60%;
 	padding: 8px;
 	color: #333;
