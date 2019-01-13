@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">  
+  </head>
+  <body>
+   <!-- Form Container -->
+   <div class="form-container">
+     <!-- Form -->
+    <form action="sent.html">
+     <h1>Personal information</h1>
+     <div class="my-row">
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="fname">First Name</label>
+         </div>
+         <div class="col-7">
+          <i class="glyphicon glyphicon-user icon"></i>
+           <input class="input-field" type="text" name="fname" id="fname" placeholder="First Name" required>
+          <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Please enter First Name</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="lname">Last Name</label>
+         </div>
+         <div class="col-7">
+          <i class="glyphicon glyphicon-user icon"></i>
+           <input class="input-field" type="text" name="lname" id="lname" placeholder="Last Name" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Please enter Last Name</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+          <label class="label-text" for="phone">Phone #</label>
+         </div>
+         <div class="col-7">
+           <i class="glyphicon glyphicon-earphone icon"></i>
+           <input class="input-field" type="tel" name="phone" id="phone" placeholder="Phone" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Please enter address</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="address">Address</label>
+         </div>
+         <div class="col-7">
+           <i class="glyphicon glyphicon-home icon"></i>
+           <input class="input-field" type="text" name="address" id="address" placeholder="Address" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+           <p class="red-text">Please enter address</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="city">City</label>
+         </div>
+         <div class="col-7">
+           <i class="glyphicon glyphicon-home icon"></i>
+           <input class="input-field" type="text" name="city" id="city" placeholder="City" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Choose a City</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="state">State</label>
+         </div>
+         <div class="col-7 autocomplete">
+          <i class="glyphicon glyphicon-list icon "></i>
+            <input class="input-field" id="myInput" type="text" name="state" placeholder="State" required>
+            <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Choose a Country</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="zipCode">Zip Code</label>
+         </div>
+         <div class="col-7">
+           <i class="glyphicon glyphicon-home icon"></i>
+           <input class="input-field" type="text" name="zipCode" id="zipCode" placeholder="Zip Code" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Please supply a valid ZIp Code</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="about">About</label>
+         </div>
+         <div class="col-7">
+           <i class="glyphicon glyphicon-pencil icon icon-area"></i>
+           <textarea class="input-field" name="about" id="about" placeholder="About" required></textarea>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Please enter at least 10</p>
+       </div>
+     </div>
+     <h1>Account information</h1>
+     <div class="my-row">
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="email">E-mail</label>
+         </div>
+         <div class="col-7">
+          <i class="glyphicon glyphicon-envelope icon"></i>
+           <input class="input-field" type="email" name="email" id="email" placeholder="E-mail" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+           <p class="red-text">Please supply a valid email address</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="password">Password</label>
+         </div>
+         <div class="col-7">
+          <i class="fa fa-key icon icon-pass"></i>
+           <input class="input-field" type="password" name="password" id="password" placeholder="Password" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+         <p class="red-text">Confirm your password</p>
+       </div>
+       <div class="clearfix">
+         <div class="col-3">
+           <label class="label-text" for="conPassword">Confirm Password</label>
+         </div>
+         <div class="col-7">
+          <i class="fa fa-key icon icon-pass2"></i>
+           <input class="input-field" type="password" name="conPassword" id="conPassword" placeholder="Confirm Password" required>
+           <i class="glyphicon glyphicon-remove"></i>
+         </div>
+       </div>
+       <div class="my-btn">
+         <input type="submit" value="Submit" onclick="wrongAns();">
+       </div>
+     </div>
+   </form>
+   <!-- Form END -->
+   </div>
+   <!-- Form Container END -->
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
+
+
