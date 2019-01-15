@@ -59,6 +59,11 @@ input[type=password],
 input[type=email],
 textarea {
 	border: 1px solid #248f24;
+	-webkit-border: 1px solid #248f24;
+	-moz-border: 1px solid #248f24;
+	-ms-border: 1px solid #248f24;
+	-o-border: 1px solid #248f24;
+	-webkit-border-radius: none;
 	margin-left: -2px;
 	width: 60%;
 	padding: 8px;
@@ -216,8 +221,6 @@ input[type=submit]{
 	input[type=email],
 	textarea {
 		width: 80%;
-		border-left: none;
-		border-top-left-radius: none;
 	}
 	.icon-pass2 {
 		margin-top: -0.5px;
