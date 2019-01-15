@@ -81,32 +81,20 @@ function wrongAns() {
         inputField[i].style.border = '1px solid #ff3333';
         inputField[i].style.borderLeft = 'none ';
   } 
-})();
-
-(function icon_icon() {
-      for (var i = 0; i < icon.length; i++) {
-        icon[i].style.border = '1px solid #ff3333';
-        icon[i].style.background = '#ff9999';
-        icon[i].style.color = '#ff0000';
+      for (var d = 0; d < icon.length; d++) {
+        icon[d].style.border = '1px solid #ff3333';
+        icon[d].style.background = '#ff9999';
+        icon[d].style.color = '#ff0000';
   } 
-})();
-
-(function label_Txt() {
-      for (var i = 0; i < labelText.length; i++) {
-      labelText[i].style.color = '#ff5050'
+      for (var e = 0; e < labelText.length; e++) {
+        labelText[e].style.color = '#ff5050'
+  }
+      for (var g = 0; g < glyphicon.length; g++) {
+        glyphicon[g].style.display = 'block';
   } 
-})();
-
-(function glyph_Icon() {
-      for (var i = 0; i < glyphicon.length; i++) {
-      glyphicon[i].style.display = 'block';
-  } 
-})();
-
-(function change_Color() {
-      for (var i = 0; i < changeColor.length; i++) {
-        changeColor[i].style.display = 'block';
-        changeColor[i].style.color = '#ff5050';
+      for (var r = 0; r < changeColor.length; r++) {
+        changeColor[r].style.display = 'block';
+        changeColor[r].style.color = '#ff5050';
   }
 })();
 };
